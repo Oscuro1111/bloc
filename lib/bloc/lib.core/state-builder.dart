@@ -15,9 +15,9 @@ class StateBuilder<I extends Event, O extends BlocState> {
 
   Stream<O> _stream;
 
-  Stream<O> get strem => _stream;
+  Stream<O> get stream => _stream;
 
-  Function(Event) get add => _streamController.sink.add;
+  Function(I) get add => _streamController.sink.add;
 
   void dispose() {
     _streamController.close();

@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:proj_dec/bloc/bloc.dart' show Bloc, BlocState, Event, Future;
+import 'package:proj_dec/bloc/bloc.dart' show Bloc, BlocState, Event;
 
 class Login extends Event {}
 

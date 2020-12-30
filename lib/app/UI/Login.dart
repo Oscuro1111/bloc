@@ -90,7 +90,10 @@ class _LoginCompState extends State<LoginComp> {
           }
 
           return Center(
-            child: Text(""),
+            child: Text(
+              "",
+              style: TextStyle(color: Colors.primaries[1]),
+            ),
           );
         });
     return streamBuilder;

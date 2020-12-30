@@ -15,7 +15,7 @@ abstract class BlocComponent<E extends Event, S extends BlocState>
   StateBuilder<E, S> get loginState => _blocState;
 
   ///Listent to Data event [StateBuilder]
-  Stream<S> get stream => _blocState.strem;
+  Stream<S> get stream => _blocState.stream;
 
   ///Dispatch events to event stream for state change .
   Function(E) get add => _blocState.add;
