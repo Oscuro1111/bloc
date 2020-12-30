@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:proj_dec/bloc/bloc.dart';
-import './app/bloc/BlocBase.dart';
+import 'app/bloc/logBloc.dart';
 import './app/UI/Login.dart';
 
 class Home extends StatefulWidget {

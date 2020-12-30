@@ -37,10 +37,10 @@ class Log extends Bloc<Event, LoginState> {
   Future<LoginState> eventMapToState(Event event) async {
     if (event is LoginOut) {
       //Intentional delay
-      await Future.delayed(Duration(seconds: 5), () => null);
+      await Future.delayed(Duration(seconds: 3), () => null);
 
       var state = this.setStoreSync((LoginState store) {
-        store.login = true;
+        store.login = false;
       });
 
       return state;
@@ -48,10 +48,10 @@ class Log extends Bloc<Event, LoginState> {
 
     if (event is Login) {
       //Intentional delay
-      await Future.delayed(Duration(seconds: 5), () => null);
+      await Future.delayed(Duration(seconds: 3), () => null);
 
       var state = this.setStoreSync((store) {
-        store.login = false;
+        store.login = true;
       });
 
       return state;
