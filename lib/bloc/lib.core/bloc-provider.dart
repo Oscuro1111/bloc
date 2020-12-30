@@ -5,6 +5,7 @@ import './bloc-interface.dart';
 typedef BlocBuilder<T> = T Function();
 typedef BlocDisposer<T> = Function(T);
 
+///Bloc provider for getting bloc by its type .
 class BlocProvider<T extends BlocBase> extends StatefulWidget {
   BlocProvider({Key key, this.child, this.blocBuilder, this.blocDispose})
       : super(key: key);
@@ -51,6 +52,7 @@ class _BlocProviderState<T extends BlocBase> extends State<BlocProvider<T>> {
   }
 }
 
+///Wrapping bloc inside inhrited widget as provide direct acced to bloc from any depth of element tree with O(1) access time.
 class _BlocProviderInherited<T> extends InheritedWidget {
   _BlocProviderInherited({
     Key key,
